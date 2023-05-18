@@ -1,0 +1,25 @@
+@use "../../assets/scss/colors";
+
+.loaderStyle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.loader-logo {
+  animation: loaderSpin infinite 2.5s linear;
+  height: 8rem;
+  // fill: colors.$clr-YELLOW;
+  background-color: colors.$clr-YELLOW;
+}
+
+@keyframes loaderSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,76 @@
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  /* 768px */
+  @media screen and (max-width: 48em) {
+    font-size: 56.25%;
+  }
+
+  /* 576px */
+  @media screen and (max-width: 36em) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  overflow-y: scroll;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  padding-bottom: 2rem;
+}
+
+a,
+a:link,
+a:hover,
+a:focus {
+  color: currentcolor;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.kmEwYL .loader-logo {
+  animation: 2.5s linear 0s infinite normal none running iVXCSc;
+  height: 8rem;
+  fill: rgb(255, 232, 31);
+}
+
+@font-face {
+  font-family: "Star Jedi";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Star Jedi"), local("StarJedi"),
+    url("../component/assets/fonts/Starjedi.ttf") format("truetype");
+  display: swap;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}

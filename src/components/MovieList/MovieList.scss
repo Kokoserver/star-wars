@@ -1,0 +1,39 @@
+.movie-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+
+  &__inner {
+    display: flex;
+    margin: 0 -1.5rem;
+    flex-wrap: wrap;
+  }
+}
+
+/* 576px */
+@media (min-width: 36em) {
+  .movie-container {
+    max-width: 54rem;
+  }
+}
+
+/* 768px */
+@media (min-width: 48em) {
+  .movie-container {
+    max-width: 72rem;
+  }
+}
+
+/* 992px */
+@media (min-width: 62em) {
+  .movie-container {
+    max-width: 96rem;
+  }
+}
+
+/* 1200px */
+@media (min-width: 75em) {
+  .movie-container {
+    max-width: 114rem;
+  }
+}

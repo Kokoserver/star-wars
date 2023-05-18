@@ -1,0 +1,103 @@
+@use "../../assets/scss/colors";
+
+.movie {
+  width: 100%;
+  position: relative;
+  padding: 0 1.5rem;
+  margin: 1.5rem 0;
+  flex: 0 0 100%;
+  max-width: 100%;
+
+  &:nth-child(1) > * {
+    background: url("../../assets/images/bg-card-1.png");
+  }
+
+  &:nth-child(2) > * {
+    background: url("../../assets/images/bg-card-2.png");
+  }
+
+  &:nth-child(3) > * {
+    background: url("../../assets/images/bg-card-3.png");
+  }
+
+  &:nth-child(4) > * {
+    background: url("../../assets/images/bg-card-4.png");
+  }
+
+  &:nth-child(5) > * {
+    background: url("../../assets/images/bg-card-5.png");
+  }
+
+  &:nth-child(6) > * {
+    background: url("../../assets/images/bg-card-6.png");
+  }
+
+  &__inner-box {
+    display: block;
+    background-color: colors.$clr-bg;
+    padding: 2rem;
+    color: colors.$clr-white;
+    transform: perspective(1px) translateZ(0px);
+    box-shadow: transparent 0px 0px 10px 3px, colors.$clr-BLACK 0px 0px 10px;
+    box-shadow: colors.$clr-YELLOW;
+    transition: all 0.3s ease 0s;
+    overflow: hidden;
+    border-radius: 0.5rem;
+
+    &:hover {
+      // box-shadow: colors.$clr-BLUE 0px 0px 10px 3px,
+      //   colors.$clr-BLACK 0px 0px 10px;
+      box-shadow: colors.$clr-YELLOW;
+    }
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.7rem;
+    color: colors.$clr-YELLOW;
+
+    h3 {
+      font-family: "Star Jedi", "Open Sans", sans-serif;
+      font-size: 2.2rem;
+      letter-spacing: 2px;
+    }
+
+    span {
+      color: colors.$clr-GRAY;
+      font-size: 1.4rem;
+    }
+  }
+
+  &__details {
+    font-family: inherit;
+    color: colors.$clr-white;
+    overflow-wrap: break-word;
+    white-space: normal;
+    margin-bottom: 2.5rem;
+  }
+
+  &__link {
+    padding-top: 1.2rem;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    border-top: 2px solid colors.$clr-RED;
+    color: colors.$clr-YELLOW;
+  }
+}
+
+/* 768px */
+@media (min-width: 48em) {
+  .movie {
+    flex: 0 0 calc(100% / 2);
+    max-width: calc(100% / 2);
+  }
+}
+
+/* 992px */
+@media (min-width: 62em) {
+  .movie {
+    flex: 0 0 calc(100% / 2);
+    max-width: calc(100% / 2);
+  }
+}

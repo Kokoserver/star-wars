@@ -1,0 +1,14 @@
+@use "../../assets/scss/colors";
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 13rem;
+
+  .logo {
+    fill: colors.$clr-YELLOW;
+    width: 100%;
+    max-width: 45rem;
+  }
+}
